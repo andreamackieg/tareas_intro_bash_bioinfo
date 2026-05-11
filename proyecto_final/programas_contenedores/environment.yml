@@ -1,0 +1,11 @@
+name: otu_pipeline
+
+channels:
+  - bioconda
+  - conda-forge
+
+dependencies:
+  - vsearch
+  - mafft
+  - iqtree
+  - seqmagick

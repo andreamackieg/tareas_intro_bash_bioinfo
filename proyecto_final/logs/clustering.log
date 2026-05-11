@@ -1,0 +1,29 @@
+=====================================
+OTU CLUSTERING CON VSEARCH
+=====================================
+Paso 1: Dereplicación
+vsearch v2.29.1_linux_x86_64, 15.6GB RAM, 8 cores
+https://github.com/torognes/vsearch
+
+Dereplicating file ../datos/raw/Dominica_limpio.fasta 100%
+427148 nt in 740 seqs, min 202, max 693, avg 577
+Sorting 100%
+740 unique sequences, avg cluster 1.0, median 1, max 1
+Writing FASTA output file 100%
+Paso 2: Clustering OTU
+vsearch v2.29.1_linux_x86_64, 15.6GB RAM, 8 cores
+https://github.com/torognes/vsearch
+
+Reading file ../resultados/otu_clustering/Thelephoraceae_OTU_derep.fasta 100%
+427148 nt in 740 seqs, min 202, max 693, avg 577
+Masking 100%
+Sorting by length 100%
+Counting k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 54 Size min 1, max 91, avg 13.7
+Singletons: 15, 2.0% of seqs, 27.8% of clusters
+Paso 3: Generando tabla OTU
+Número total de OTUs: 54
+Clustering completado
